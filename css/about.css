@@ -1,0 +1,219 @@
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway",  sans-serif;
+    --nav-font: "Poppins",  sans-serif;
+    --background-color: #ffffff; 
+    --default-color: #444444;
+    --heading-color: #151515;
+    --accent-color: #ffc451;
+    --surface-color: #ffffff;
+    --contrast-color: #312f2f;
+    --nav-color: rgba(255, 255, 255, 0.905);
+    --nav-hover-color: #ffc451; 
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #212529;
+    --nav-dropdown-hover-color: #ffc451;
+    scroll-behavior: smooth;
+} 
+.light-background {
+    --background-color: #f9f9f9;
+    --surface-color: #ffffff;
+}
+.dark-background {
+    --background-color: #060606;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #252525;
+    --contrast-color: #2a2727;
+}
+
+body{
+    position: relative;
+    opacity: 0;
+    animation: fadeInEffect 1.5s ease-in forwards;
+}
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1, h2, h3{
+    color: #4cd964;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+}
+
+#navigation {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    --background-color: rgba(0, 0, 0, 0.8);
+    --heading-color: #ffffff;
+    --contrast-color: #ffffff;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 10px 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #navigation .logo {
+    line-height: 1;
+}
+
+#navigation .logo h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+ #navigation .logo span {
+    color: var(--accent-color);
+    font-size: 32px;
+}
+
+#navigation .btn-getstarted,
+#navigation .btn-getstarted:focus {
+  color: var(--contrast-color);
+  font-size: 14px;
+  padding: 8px 30px;
+  margin: 0 0 0 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+  border: 2px solid var(--accent-color);
+}
+
+#navigation .btn-getstarted:hover,
+#navigation .btn-getstarted:focus:hover {
+  color: var(--default-color);
+  background: var(--accent-color);
+}
+
+@media (max-width: 1200px) {
+    #navigation .logo {
+      order: 1;
+    }
+  
+    #navigation .btn-getstarted {
+      order: 2;
+      margin: 0 15px 0 0;
+      padding: 6px 15px;
+    }
+  
+    #navigation .navmenu {
+      order: 3;
+    }
+  }
+  
+.scrolled #navigation {
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+ 
+
+@media (max-width: 1200px) {
+    #navigation .logo {
+      order: 1;
+    }
+  
+    #navigation .btn-getstarted {
+      order: 2;
+      margin: 0 15px 0 0;
+      padding: 6px 15px;
+    }
+  
+    #navigation .navmenu {
+      order: 3;
+    }
+}
+  
+.scrolled #navigation {
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1200px) {
+    .navmenu {
+      padding: 0;
+    }
+  
+    .navmenu ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+  
+    .navmenu li {
+      position: relative;
+    }
+  
+    .navmenu a,
+    .navmenu a:focus {
+      color: var(--nav-color);
+      padding: 18px 15px;
+      font-size: 16px;
+      font-family: var(--nav-font);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+  
+    .navmenu a i,
+    .navmenu a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+      transition: 0.3s;
+    }
+  
+    .navmenu li:last-child a {
+      padding-right: 0;
+    }
+  
+    .navmenu li:hover>a,
+    .navmenu .active,
+    .navmenu .active:focus {
+      color: var(--nav-hover-color);
+    }
+}
+
+#pic-carousel {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #pic-carousel .carousel-item img {
+    width: 100%;
+    height: 120rem;
+    
+  }
