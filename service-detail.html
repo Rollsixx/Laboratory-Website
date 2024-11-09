@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Service</title>
+    <link rel="stylesheet" href="css/service-detail.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="fontawesome/js/all.js"></script>
+    <style>
+      body {
+        background: #0e0e14;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-image: url('images/stars.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .serv-dev{
+        background: #0e0e14;
+      }
+
+      .neumorphism {
+        background: #2c2f3b;
+        border-radius: 15px;
+      }
+
+      .neumorphism-inset {
+        background: #2c2f3b;
+        box-shadow: inset 10px 10px 20px #121318, inset -10px -10px 20px #464b5e;
+        border-radius: 15px;
+      }
+
+      .neumorphism-button {
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: #2c2f3b;
+        box-shadow: 5px 5px 10px #121318, -5px -5px 10px #464b5e;
+        border: none;
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .neumorphism-button:hover {
+        box-shadow: inset 10px 10px 20px #121318, inset -10px -10px 20px #464b5e;
+      }
+
+      .service-item {
+        transition: transform 0.2s;
+        box-shadow: 5px 5px 10px #121318, -5px -5px 10px #464b5e;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #2c2f3b;
+      }
+
+      .service-item:hover {
+        transform: translateY(-5px);
+        box-shadow: inset 5px 5px 10px #121318, inset -5px -5px 10px #464b5e;
+      }
+
+      .whatweoffer-section {
+        margin-top: 5rem;
+      }
+
+      .whatweoffer-section h2 {
+        font-weight: 600;
+      }
+
+      .contact-card {
+        box-shadow: 5px 5px 10px #121318, -5px -5px 10px #464b5e;
+        border-radius: 15px;
+      }
+
+      .footer-text {
+        font-size: 0.9rem;
+      }
+
+      .img-fluid {
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #121318, -5px -5px 10px #464b5e;;
+      }
+
+      h2, h4, h5{
+        color: white;
+      }
+      p{
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navigation" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <h1 class="sitename">ЯP</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home<br></a></li>
+            <li><a href="whoweare.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="service-detail.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <a class="btn-getstarted" href="login.html"><i class="fa-solid fa-right-from-bracket px-2"></i>Log out</a>
+      </div>
+    </div>
+
+    <div class="row justify-content-center whatweoffer-section ">
+        <div class="serv-dev col-lg-12 text-center">
+            <div class="serv-dev mt-5 py-5">
+                <h2>Service Details</h2>
+                <div class="bg-primary mt-2 m-auto" style="width: 200px; padding: 3px; border-radius: 25px;"></div>
+                <p>Details about the services that I offer.</p>
+            </div>    
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-10">
+          <div class="row">
+              <div class="col-md-5 fade-in">
+                  <!-- First Column with Service List and Contact Card -->
+                  <div class="card neumorphism">
+                      <div class="card-body">
+                          <h2 class="text-white">Service List</h2>
+                          <div class="service-item w-100 text-dark my-2">
+                              <h5><i class="fa-solid fa-headset px-2"></i> Audio Production</h5>
+                          </div>
+                          <div class="service-item w-100 text-dark my-2">
+                              <h5><i class="fa-solid fa-microphone-alt px-2"></i> Voice Recording</h5>
+                          </div>
+                          <div class="service-item w-100 text-dark my-2">
+                              <h5><i class="fa-solid fa-music px-2"></i> Music Composition</h5>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="card contact-card neumorphism-inset mt-5">
+                      <div class="card-body text-center p-5">
+                          <i class="fa-solid fa-headphones" style="font-size: 70px; color: white;"></i><br>
+                          <h4>Have A Question?</h4>
+                          <p><i class="fa-solid fa-phone px-2"></i>0987473829 <br>
+                              <i class="fa-solid fa-envelope px-2"></i>rollyboyryanpionilla@gmail.com
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-7 fade-in">
+                  <!-- Second Column with Image and Audio Services List -->
+                  <img src="images/pic4.jpg" class="img-fluid mb-4" alt="Service Image">
+                  <h4>Professional Audio Services</h4>
+                  <p>I specialize in high-quality audio services tailored to your needs. From sound design to mixing, I ensure top-notch results that bring your vision to life.</p>
+                  <ul>
+                      <li class="text-white">Expert Audio Engineering</li>
+                      <li class="text-white">Custom Music Arrangements</li>
+                      <li class="text-white">Professional Voiceover Services</li>
+                      <li class="text-white">Audio Post-Production</li>
+                  </ul>
+                  <a href="whoweare.html" class="neumorphism-button mt-5" style="margin-top: 100px;">Learn More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      
+    <div class="row justify-content-center" style="margin-top: 110px;">
+      <div class="col-md-4 text-center p-5">
+        <h6 class="footer-text text-white"><i class="fa-solid fa-copyright px-2"></i>Copyright <b>IT2F Property</b> All Right Reserved</h6>
+        <p class="footer-text">Designed By: <a href="https://www.facebook.com/rbrpionilla11/" class="text-decoration-none">Rolly Boy Ryan Pionilla</a></p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      const fadeElements = document.querySelectorAll(".fade-in");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add("show");
+                    }, index * 500);
+                }
+            });
+        },
+        { threshold: 0.1 }
+      );
+
+      fadeElements.forEach((el) => observer.observe(el));
+      });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

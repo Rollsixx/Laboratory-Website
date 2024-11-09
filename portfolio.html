@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rolly Pionilla | Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Spotify-Icon-Logo.wine.png" style="width: 50%;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="fontawesome/js/all.js"></script>
+    <style>
+        body{
+        background: #0e0e14;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #e3e3e3;
+      }
+        
+        .section1-title {
+            margin: 50px 0 20px;
+            font-size: 2rem;
+            color: #512da8;
+        }
+        .icon-box i {
+            font-size: 2rem;
+            color: #512da8;
+        }
+        .portfolio-item {
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navigation" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+            <h1 class="sitename">ЯP</h1>
+          </a>
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html" >Home<br></a></li>
+              <li><a href="whoweare.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="service-detail.html">Services</a></li>
+              <li><a href="portfolio.html" class="active">Portfolio</a></li>
+              <li><a href="testimonial.html">Testimonial</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+          <a class="btn-getstarted" href="login.html"><i class="fa-solid fa-right-from-bracket px-2"></i>Log out</a>
+        </div>
+      </div>
+
+    
+      <div id="hero" class="hero section dark-background">
+        <img src="images/port.webp" data-aos="fade-in">
+        <div class="container">
+          <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-xl-6 col-lg-8">
+              <h2><b>Rolly Pionilla</b></h2>
+              <p><b>Music Producer | Performer | Sound Designer</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    <div id="about" class="container mt-5" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section1-title text-center" style="color: #4cd964;"><b>About Me</b></h2>
+        <p class="text-center" style="font-size: 20px">I am a music producer and sound designer with a passion for creating immersive audio experiences. With expertise in various genres and a commitment to excellence, I deliver unique and powerful music for every project.</p>
+    </div>
+
+    
+    <div id="skills" class="container mt-5" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section1-title text-center" style="margin-bottom: 5rem; margin-top: 15rem; color: #4cd964;"><b>Skills</b></h2>
+        <div class="row text-center">
+            <div class="col-md-4 icon-box">
+                <i class="fas fa-music"style="font-size: 4rem;" ></i>
+                <h4 style="margin-top: 2rem; color: #4cd964;"><b>Music Production</b></h4>
+                <p style="font-size: 20px;">Crafting soundscapes across various genres.</p>
+            </div>
+            <div class="col-md-4 icon-box">
+                <i class="fas fa-microphone" style="font-size: 4rem;"></i>
+                <h4 style="margin-top: 2rem; color: #4cd964;"><b>Performance</b></h4>
+                <p style="font-size: 20px;">Engaging, dynamic live shows and performances.</p>
+            </div>
+            <div class="col-md-4 icon-box">
+                <i class="fas fa-sliders-h"style="font-size: 4rem;" ></i>
+                <h4 style="margin-top: 2rem; color: #4cd964;"><b>Sound Design</b></h4>
+                <p style="font-size: 20px;">Creating audio assets for unique experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="services" class="container" style="margin-top: 15rem;" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section1-title text-center" style="color: #4cd964; margin-bottom: 3rem;"><b>Services</b></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><i class="fas fa-headphones" style="font-size: 3rem;"></i> <b style="color: #4cd964; font-size: 2rem;">Music <br>Production</b></h4>
+                <p style="font-size: 20px;">Professional production tailored to your project.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><i class="fas fa-guitar" style="font-size: 3rem;"></i> <b style="color: #4cd964; font-size: 2rem;">Custom Performances</b></h4>
+                <p style="font-size: 20px;">Custom performances for events and recordings.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><i class="fas fa-wave-square" style="font-size: 3rem;"></i> <b style="color: #4cd964; font-size: 2rem;">Audio Mixing & Mastering</b></h4>
+                <p style="font-size: 20px;">Polishing sound to a professional standard.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="portfolio" class="container" style="margin-top: 15rem; margin-bottom: 15rem;" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section1-title text-center" style="color: #4cd964; margin-bottom: 3rem;" ><b>Portfolio</b></h2>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <img src="images/dead.jpg" alt="Project 3" class="img-fluid">
+                <h5 class="text-center">Dead Inside</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/fall.jpg" alt="Project 1" class="img-fluid">
+                <h5 class="text-center">Fall In Love</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/Cover Art (Di Na Babalik).png" alt="Project 2" class="img-fluid">
+                <h5 class="text-center">Di Na Babalik</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/20230615_204053.jpg" alt="Project 3" class="img-fluid">
+                <h5 class="text-center">Satin Ang Gabi</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/mahal.png" alt="Project 3" class="img-fluid">
+                <h5 class="text-center">Mahal Mo Pa Ba Ako</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/nganong.png" alt="Project 3" class="img-fluid">
+                <h5 class="text-center">Nganong Karon Pa Ka</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/Dili sayon.png" alt="Project 3" class="img-fluid">
+                <h5 class="text-center">Dili Sayon</h5>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/giatay.jpg" alt="Project 3" class="img-fluid">
+                <h5 class="text-center">Giatay</h5>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="footer text-center">
+        <p>&copy; 2024 Rolly Pionilla | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <script>
+ 
+        AOS.init();
+
+        const fadeSections = () => {
+          const sections = document.querySelectorAll('.section');
+          
+
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+
+                entry.target.classList.add('fade-in');
+              } else {
+                entry.target.classList.remove('fade-in');
+              }
+            });
+          }, {
+            threshold: 0.5
+          });
+
+          sections.forEach(section => {
+            observer.observe(section);
+          });
+        };
+
+        fadeSections();
+      </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
